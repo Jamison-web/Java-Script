@@ -1,0 +1,33 @@
+  <script type="text/javascript">
+
+document.addEventListener("contextmenu", function(e) {
+e.preventDefault();
+});
+
+document.addEventListener("selectstart", function(e) {
+e.preventDefault();
+});
+
+document.addEventListener("keydown", function(e) {
+if (e.ctrlKey && e.keyCode == 85) {
+e.preventDefault();
+}
+});
+
+document.addEventListener("keydown", function(e) {
+if ((e.which == 123) || (e.ctrlKey && e.shiftKey && (e.keyCode == 73))) {
+e.preventDefault();
+}
+});
+
+document.addEventListener("dragstart", function(e) {
+e.preventDefault();
+});
+
+document.addEventListener("mousedown", function(e) {
+if (e.button == 2) {
+e.preventDefault();
+}
+});
+
+</script>
